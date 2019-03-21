@@ -1,0 +1,150 @@
+%% LyX 1.4.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,a4paper,english,a4]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8x]{inputenc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{amssymb}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\noun}[1]{\textsc{#1}}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%   Preambe for Thesis by Christoph Hackl
+%   Copyright 2004
+%
+%   Please feel free to edit for your convenience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Put packages you want to use here
+%   and 'fancyhdr' is required  for really fancy
+%   headings ;-)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{theorem}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{epic}
+\usepackage{setspace}
+\usepackage{psfrag}
+
+
+\usepackage[small,bf,hang]{caption2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Section for Page Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \documentclass[12pt,twoside,a4paper]{book}
+\pagestyle{plain}
+
+%%%%%%%%%%%%%%%%%%%%%
+%   all about the text
+\setlength{\textwidth}{15cm}
+\setlength{\textheight}{23.6cm}
+
+%%%%%%%%%%%%%%%%%%%%%
+%   all about margins
+\setlength{\topmargin}{2.8cm}
+\setlength{\marginparsep}{0in}
+\setlength{\marginparwidth}{0in}
+\setlength{\marginparpush}{0in}
+\setlength{\oddsidemargin}{3.5cm}
+\setlength{\evensidemargin}{2.5cm}
+
+\setlength{\hoffset}{-2.54cm}
+\setlength{\voffset}{-2.54cm}
+
+%%%%%%%%%%%%%%%%%%%%%
+%   all about the page header
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{16pt}
+
+%%%%%%%%%%%%%%%%%%%%%
+%   all about the footer
+%\setlength{\footheight}{10pt}
+\setlength{\footskip}{18pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Set line spacing  (by Muliplier ... 1.5 here)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       Fancy Page Layout with Fancy Header
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%
+%   all about head & foot rule
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.0pt}
+\setlength{\headwidth}{\textwidth}
+
+\renewcommand{\chaptermark}[1]{\markboth{Chapter \thechapter}{}}
+\renewcommand{\sectionmark}[1]{\markright{ \thesection\ #1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%   all about shown content in
+%   header
+\lhead[\bfseries Page \thepage]{\bfseries\rightmark}
+\rhead[\bfseries\leftmark]{\bfseries Page \thepage}
+\cfoot{}
+% \rfoot{\bfseries\thepage}
+
+
+%Laplace-Transformation Symbol
+\newcommand{\Laplacevw}{\unitlength 1em        % Laplace vorwärts waagrecht
+    \begin{picture}(2.4,0.6)%
+    \put(0.4,0.3){\circle{0.3}}%
+    \put(0.55,0.3){\line(1,0){1.1}}%
+    \put(1.85,0.3){\circle*{0.3}}%
+    \put(0.85,0.5){$\mathcal{L}$}%
+    \end{picture}%
+}
+
+\usepackage{babel}
+\makeatother
+\begin{document}
+\include{FirstPages_TUM}
+
+\include{Chapter1}
+
+\include{Chapter2}
+
+\include{Chapter3}
+
+\include{Chapter4}
+
+\include{Bibliography}
+
+\include{Appendix}
+\end{document}
